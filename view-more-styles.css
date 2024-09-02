@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+.separator {
+    border: 0;
+    border-top: 1px solid #ddd; /* Color and thickness of the line */
+    margin: 10px 0; /* Space above and below the line */
+}
+
+.container {
+    width: 100%; /* Full width */
+    padding: 0 10px; /* Add a bit of padding on the left and right */
+    background-color: #fff;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between header sections */
+    margin-bottom: 20px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Space between title and search bar */
+    align-items: center; /* Align items vertically */
+}
+
+.header-title {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between the icon and title */
+}
+.select-all-container {
+    display: flex;
+    align-items: center; /* Align checkbox and label */
+    gap: 5px; /* Space between checkbox and label */
+}
+.search-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+}
+.select-all-container {
+    display: flex;
+    align-items: center; /* Align checkbox and label */
+    gap: 5px; /* Space between checkbox and label */
+}
+
+.search-container input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.requests-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Ensure 3 columns and prevent overflow */
+    gap: 20px; /* Space between cards */
+    padding: 20px 0; /* Space at the top and bottom */
+}
+
+.request-card {
+    position: relative;
+}
+.card-select-checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+}
+
+
+.request-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the image and name */
+    margin-bottom: 10px;
+}
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Rounded image */
+    object-fit: cover; /* Ensures the image fills the space */
+}
+.request-card {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative; /* For positioning the buttons */
+}
+
+
+.request-card input[type="checkbox"] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.request-card h3 {
+    margin-top: 0;
+}
+
+.request-card .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.actions {
+    position: absolute;
+    right: 20px; /* Align to the right of the card */
+    bottom: 20px; /* Align near the bottom of the card */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+.actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px; /* Adjust width if needed */
+}
+
+button.approve {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Decline Button Styles */
+button.decline {
+    border: 1px solid #28a745; /* Green border */
+    background-color: #fff; /* White background */
+    color: #28a745; /* Green font color */
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+button.decline:hover {
+    background-color: #dc3545; /* Red background on hover */
+    color: #fff; /* White font color on hover */
+    border: 1px solid #dc3545; /* Red border on hover */
+}
+
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

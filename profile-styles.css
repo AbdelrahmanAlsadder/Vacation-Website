@@ -1,0 +1,92 @@
+/* Navbar spacing */
+.spacing {
+    margin-left: 15px;
+  }
+  
+  .custom-home {
+    margin-left: 35px;
+  }
+  
+  /* Profile card customization */
+  .profile-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  i {
+    font-size: 1.2rem; /* Adjust icon size if needed */
+    margin-right: 8px;
+  }
+  
+  
+  
+  .highlighted-text {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .view-more-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .view-more {
+    color: #28a745;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .view-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: -40px;
+  }
+  
+  /* Icon for Pending Requests */
+  .bi-list-check {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  .card-content {
+    margin: 0;
+    text-align: left;
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

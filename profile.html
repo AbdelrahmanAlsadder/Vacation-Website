@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="profile-styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-nav  mb-lg-0 nav-link custom-home" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="navbar-brand spacing" aria-current="page" href="profile.html">Profiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Report</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+        <!-- Notification and User Icon -->
+        <div class="d-flex align-items-center">
+          <span class="navbar-text me-3"><i class="bi bi-bell" style="font-size: 1.5rem;"></i></span>
+          <span class="navbar-text"><i class="bi bi-person-circle" style="font-size: 1.5rem;"></i></span>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Information Section -->
+<div class="container my-4" >
+  <div class="card p-4 shadow-sm profile-card" style="background-color: #f1f2f3;">
+    <!-- Upper Section -->
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center">
+        <img src="img\profile.png" class="rounded-circle profile-image" alt="User Image">
+      </div>
+      <div class="col-md-7">
+        <h5>Ahmad Azmi</h5>
+        <p>Marketing Department <br> Junior Accounting Officer</p>
+      </div>
+      <div class="col-md-3 text-end">
+        <button class="btn btn-success">New Request</button>
+      </div>
+    </div>
+
+    <!-- Lower Section: Displaying 5 texts with icons on a single line -->
+ <!-- Lower Section: Labels on top and answers underneath -->
+<div class="row mt-3 text-center">
+  <div class="col-md-2">
+    <i class="bi bi-person-fill"></i> 
+    <p><strong>Reporting To:</strong></p>
+    <p>Salwa Asem</p>
+  </div>
+  <div class="col-md-2">
+    <i class="bi bi-building"></i> 
+    <p><strong>Corporate Level:</strong></p>
+    <p>Level 10</p>
+  </div>
+  <div class="col-md-2">
+    <i class="bi bi-hourglass-split"></i> 
+    <p><strong>Lifetime:</strong></p>
+    <p>2.5 Years</p>
+  </div>
+  <div class="col-md-3">
+    <i class="bi bi-sun"></i> 
+    <p><strong>Vacation Days Left:</strong></p>
+    <p>10 Days</p>
+  </div>
+  <div class="col-md-3">
+    <i class="bi bi-thermometer-half"></i> 
+    <p><strong>Sick Days Left:</strong></p>
+    <p>14 Days</p>
+  </div>
+</div>
+<div class="row mt-3">
+
+  </div>
+</div>
+
+
+  <!-- History Section -->
+<div class="container my-4">
+  <div class="card p-3 shadow-sm" style="background-color: #f1f2f3;">
+    <div class="d-flex align-items-center">
+      <i class="bi bi-building-gear"></i>
+      <h5 style="display: inline; margin-left: 10px;">History</h5>
+  </div>
+  <hr>
+    <div class="row">
+      <!-- Each card will now take up 1/4th of the row (col-md-3 = 1/4th of 12 grid columns) -->
+      <div class="col-md-3">
+        <div class="card p-2 mb-3">
+          <h6><i class="bi bi-calendar me-2"></i> Annual Vacation</h6>
+          <p>2/3/2023 - 10/3/2023 | 8 days</p>
+          <p>Approved by: Hazem Azmi</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-2 mb-3">
+          <h6><i class="bi bi-calendar me-2"></i> Sick Vacation</h6>
+          <p>2/3/2023 - 10/3/2023 | 8 days</p>
+          <p>Approved by: Hazem Azmi</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-2 mb-3">
+          <h6><i class="bi bi-calendar me-2"></i> Annual Vacation</h6>
+          <p>2/3/2023 - 10/3/2023 | 8 days</p>
+          <p>Approved by: Hazem Azmi</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-2 mb-3">
+          <h6><i class="bi bi-calendar me-2"></i> Non Paid Vacation</h6>
+          <p>2/3/2023 - 10/3/2023 | 8 days</p>
+          <p>Approved by: Hazem Azmi</p>
+        </div>
+      </div>
+
+      <!-- Repeat for additional rows (keeping 4 per row) -->
+      <div class="col-md-3">
+        <div class="card p-2 mb-3">
+          <h6><i class="bi bi-calendar me-2"></i> Annual Vacation</h6>
+          <p>2/3/2023 - 10/3/2023 | 8 days</p>
+          <p>Approved by: Hazem Azmi</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-2 mb-3">
+          <h6><i class="bi bi-calendar me-2"></i> Non Paid Vacation</h6>
+          <p>2/3/2023 - 10/3/2023 | 8 days</p>
+          <p>Approved by: Hazem Azmi</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-2 mb-3">
+          <h6><i class="bi bi-calendar me-2"></i> Sick Vacation</h6>
+          <p>2/3/2023 - 10/3/2023 | 8 days</p>
+          <p>Approved by: Hazem Azmi</p>
+        </div>
+      </div>
+    </div>
+    <div class="view-more-container">
+      <a href="viewMore.html" class="text-success view-more">View More ></a>
+  </div>
+  </div>
+</div>
+
+
+ <!-- Pending Requests Section -->
+<div class="container my-4">
+  <div class="card p-3 shadow-sm" style="background-color: #f1f2f3;">
+    <!-- Pending Requests Header with Icon -->
+    <h5 class="d-flex align-items-center">
+      <i class="bi bi-list-check me-2"></i> Pending Requests
+    </h5>
+    <hr>
+    <div class="row">
+      <!-- First pending request -->
+      <div class="col-md-3">
+        <div class="profile-card p-3 text-center">
+          <img src="img\profile.png" class="profile-image rounded-circle mb-2" alt="Profile Image">
+          <h6>Ahmad Attar</h6>
+          <hr>
+          <p class="card-content"><i class="bi bi-calendar me-2"></i> Submitted on: 1/3/2024</p>
+          <p class="card-content"><i class="bi bi-calendar me-2"></i> Duration: 2 Weeks (14/4/2023 - 16/4/2023)</p>
+          <hr>
+          <p class="card-content"><i class="bi bi-person-fill me-2"></i> Currently at: <span class="highlighted-text">Omar Ahmad</span></p>
+        </div>
+      </div>
+
+      <!-- Second pending request -->
+      <div class="col-md-3">
+        <div class="profile-card p-3 text-center">
+          <img src="img\profile.png" class="profile-image rounded-circle mb-2" alt="Profile Image">
+          <h6>Ahmad Attar</h6>
+          <hr>
+          <p class="card-content"><i class="bi bi-calendar me-2"></i> Submitted on: 1/3/2024</p>
+          <p class="card-content"><i class="bi bi-calendar me-2"></i> Duration: 2 Weeks (14/4/2023 - 16/4/2023)</p>
+          <hr>
+          <p class="card-content"><i class="bi bi-person-fill me-2"></i> Currently at: <span class="highlighted-text">Omar Ahmad</span></p>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+
+    <!-- View More Button -->
+    <div class="view-more-container">
+      <a href="#" class="btn btn-link view-more">View More ></a>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

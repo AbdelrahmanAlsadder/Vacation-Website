@@ -1,0 +1,361 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: blue;
+}
+.big-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.button-container {
+    display: flex; /* Arrange buttons side by side */
+    width: 100%; /* Ensure full width for container */
+}
+
+.btn {
+    width: 50%; /* Each button takes 50% of the width */
+    border-radius: 0; /* Remove border radius for a consistent look */
+    padding: 10px 0; /* Add some padding for height */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border: 2px solid #4CAF50; /* Default border color */
+    font-weight: bold; /* Make the text bold */
+}
+
+.btn-decline {
+    background-color: white; /* White background */
+    color: #4CAF50; /* Green text color */
+    border-color: #4CAF50; /* Green border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn-decline:hover {
+    background-color: red; /* Green background on hover */
+    color: white; /* White text on hover */
+}
+
+.btn-approve {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border-color: #4CAF50; /* Green border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn-approve:hover {
+    background-color: white; /* White background on hover */
+    color: #4CAF50; /* Green text on hover */
+}
+
+.custom-home {
+    margin-left: 35px;
+}
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 148%;
+}
+
+h2 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.new-request-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-request-btn:hover {
+    background-color: #388E3C;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 150%;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    background-color: #f1f2f3;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Adjust width to 50% */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 1000px;
+}
+
+.profile-upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+.profile-img {
+    width: 300px;  /* Set a fixed width */
+    height: 300px; /* Set height equal to width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image is not distorted */
+    display: block; /* Center alignment */
+    margin: 10px auto; /* Center the image and add spacing */
+}
+
+.view-profile {
+    background-color: #fff;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-profile:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.profile-lower {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.info i {
+    margin-right: 8px;
+    color: #888;
+}
+
+.info-value {
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.request-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 50%; /* Adjust width to 50% */
+    max-width: 700px; /* Ensures same width as profile card */
+    
+}
+
+.request-card {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.request-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.request-info i {
+    margin-bottom: 10px;
+}
+
+.request-card h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .profile-card, .request-cards {
+        width: 100%;
+    }
+
+    .request-cards {
+        justify-content: center;
+    }
+    .header-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .profile-upper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .view-profile {
+        margin-top: 10px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .request-card {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 360px;
+}
+
+.carousel-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.par {
+    text-align: left;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+}
+
+.caption-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 15px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.carousel-indicators {
+    position: absolute; /* Change to absolute positioning */
+    bottom: 5px; /* Position the indicators 10px from the bottom of the carousel */
+    left: 50%; /* Center the indicators horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the dots horizontally */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    list-style: none; /* Remove default bullet points */
+}
+
+.carousel-indicators li {
+    background-color: #333; /* Dots color */
+    width: 10px; /* Smaller width for dots */
+    height: 10px; /* Height equal to width for round shape */
+    border-radius: 50%; /* Make the indicators round */
+    margin: 5px; /* Space between the dots */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.carousel-indicators .active {
+    background-color: #555; /* Active dot color */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 767.98px) {
+    .carousel-caption {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+}
+
+.request-container {
+    background-color: #f1f2f3;
+    
+}
+
+.upper-container {
+    padding-top: 20px;
+}
+
+.view-more-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 10px; 
+}
+.card-img-top {
+    width: 150px;  /* Set a fixed width */
+    height: 150px; /* Set the height equal to the width */
+    object-fit: cover; /* Ensures the image is not distorted */
+    display: block; /* Center alignment */
+    margin: 10px auto; /* Center the image and add some spacing */
+}
+
+.profile-img1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}

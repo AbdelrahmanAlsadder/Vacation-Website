@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Requests</title>
+    <link rel="stylesheet" href="view-more-styles.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <header>
+            <div class="header-content">
+                <div class="header-title">
+                    <img src="img\search.png" alt="Search Icon" class="search-icon"> <!-- Add your search icon here -->
+                    <h1>Vacation Requests</h1>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchRequests()">
+                    <button onclick="searchRequests()">Search</button>
+                </div>
+            </div>
+            <hr class="separator">
+            <div class="select-all-container">
+                <input type="checkbox" id="selectAll" onclick="toggleSelectAll()">
+                <label for="selectAll">Select All</label>
+            </div>
+        </header>
+
+        <div id="requestsContainer" class="requests-container"></div>
+        
+
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <script src="view-more.js"></script>
+
+</body>
+</html>
